@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(117, 159, 170);
+    font-family: 'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+p{
+    margin: 0;
+}
+#container{
+    display: flex;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* margin: 0 auto; */
+    /* transform: translate(0, 50%); */
+    background-color: rgb(108, 156, 197);
+    width: fit-content;
+    /* height: 40%; */
+    text-align: center;
+    outline: 6px double black;
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* min-width: fit-content; */
+}
+
+#openHelp{
+    color: #222;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    background-color: #555;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 1.5em;
+    transition: .1s;
+}
+#openHelp:hover{
+    cursor: pointer;
+    background-color: #444;
+}
+/* b div{
+    padding: 5px;
+    display: none;
+    position: inherit;
+    top: 150%;
+    left: -20%;
+    text-align: left;
+    background-color: rgba(130, 210, 230, .95);
+    border-radius: 3%;
+    transition: opacity 0.1s;
+    width: max-content;
+    text-wrap: nowrap;
+    font-size: .7em;
+} */
+
+#openHelp:before{
+    content: "?";
+}
+/* b:hover > div{
+    display: inline-block;
+} */
+#btncalcular {
+    border: none; 
+    color: black; 
+    padding: 2% 4%; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    background-color: white; 
+    border: 3px solid #007bff;
+    grid-column: 2;
+    font-size: 2em;
+    text-align: center;
+    width: fit-content;
+    transition: 0.2s;
+    min-width: fit-content;
+}
+#inputVIN{
+    font-size: 120%;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px  solid #007bff;
+    border-left: 2px  solid #007bff;
+    border-radius: 10px;
+    grid-column: 1;
+    width: auto;
+    transition: 0.2s;
+    margin-bottom: 2%;
+    padding: 0.4rem;
+}
+
+#respuesta{
+    color: rgb(163, 39, 39);
+    color: rgb(48, 201, 68);
+    /* background-color: black; */
+    position: relative;
+    min-width: 10em;
+    max-width: 15em;
+    min-height: 6em;
+    max-height: 8em;
+    user-select: text;
+    display: inline;
+    flex-grow: 1;
+    text-wrap: wrap;
+    font-size: 2em;
+}
+#btncalcular:hover {
+    background: #0b7dda;
+     color: white;
+    transition: 0.2s;
+
+}
+
+
+#inputVIN:focus{
+    /* transform: scale(1.1,1.1); */
+    box-shadow: 0 0 2px 1px rgb(0, 0, 0);
+    transition: 0.2s;
+    /* margin-bottom: 3%; */
+}
+
+#help{
+    background-color: rgb(182, 217, 42);
+}
+
+#okdialog{
+    border: none; 
+    color: black; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    background-color: white; 
+    border: 3px solid #007bff;
+    font-size: 1em;
+    text-align: center;
+    width: fit-content;
+    transition: 0.2s;
+    min-width: fit-content;
+    margin-top: 1rem;
+    padding: .4rem;
+}

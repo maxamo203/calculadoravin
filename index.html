@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <title>Validar VIN</title>
+</head>
+<body>
+    
+    <dialog  id="help">
+        <p>Para <b><u><i>validar</i></u></b> un numero VIN:</p>
+        <p>•Ingresar el numero VIN completo.</p>
+        <p>Ej: 123456789ABCDEFGH</p>
+        <br>
+        <p>Para <b><u><i>calcular</i></u></b> un numero VIN: </p>
+        <p>•Ingresar un # en la novena posicion</p>
+        <p>Ej: 12345678#ABCDEFGH</p>
+        <form method="dialog">
+            <button id="okdialog">Entendido</button>
+        </form>
+    </dialog>
+
+    <div id="container">
+        <div class="item">
+            <b id="openHelp"></b>
+            <h1 id = "titulo">Validador de VIN</h1>
+            <form onsubmit="return false;">
+                <input type = "text" id = "inputVIN" placeholder="Ingresa el código VIN aquí">
+                <button id = "btncalcular">Calcular</button>
+            </form>
+            
+            <h2 id = "respuesta"></h2>
+        </div>
+        
+        
+    </div>
+    
+
+</body>
+</html>
